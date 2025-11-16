@@ -1,0 +1,9 @@
+ignoredBuiltDependencies:
+  - '@parcel/watcher'
+  - '@tailwindcss/oxide'
+  - esbuild
+  - protobufjs
+  - sharp
+
+onlyBuiltDependencies:
+  - better-sqlite3

@@ -1,0 +1,14 @@
+---
+import Hearder from "../components/Hearder.astro";
+import NavbarIsland from "../components/NavbarIsland";
+import Profesors from "../components/profesor.astro";
+import Layout from "../layouts/Layout.astro";
+---
+<header>
+    <meta charset="UTF-8" />
+    <title>Aprendizaje</title>
+</header>
+<Layout>
+	<NavbarIsland client:load />
+    <Profesors />
+</Layout>

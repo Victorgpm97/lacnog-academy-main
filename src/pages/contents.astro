@@ -1,0 +1,31 @@
+---
+import Learning from '../components/Learning.astro';
+import Hearders from '../components/Hearders';
+import Layout from '../layouts/Layout.astro';
+import NavbarIsland from "../components/NavbarIsland";
+import Lacnog from "../logos/Logo-LACNOG-1-300x154.png"
+
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contenido</title>
+  </head>
+    <Layout>
+      <NavbarIsland client:load />
+      <Learning/>
+    </Layout>
+	<footer class="bg-[#323232] text-white py-12 px-4 sm:px-6 lg:px-8">
+		<div class="max-w-7xl mx-auto text-center">
+			<div class="flex items-center justify-center space-x-3 mb-6">
+				<img src={Lacnog.src} alt="" class="w-35 h-20">
+			</div>
+			<p class="text-gray-400 mb-6">Proyecto apoyado por LACNOG - Grupo de operadores de Redes de Latinoamérica y el Caribe</p>
+			<div class="border-t border-gray-700 pt-6">
+				<p class="text-gray-500">© 2024 Academy. Todos los derechos reservados.</p>
+			</div>
+		</div>
+	</footer>
+

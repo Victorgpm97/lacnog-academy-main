@@ -1,0 +1,14 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import NavbarIsland from "../../components/NavbarIsland.tsx";
+import ProfesorSelector from "../../components/LanguageSelectorProfesor"
+---
+
+<html lang="es">
+  <body>
+    <Layout>
+        <NavbarIsland client:load />
+        <ProfesorSelector client:load/>
+    </Layout>
+  </body>
+</html>

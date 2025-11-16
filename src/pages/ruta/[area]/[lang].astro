@@ -1,0 +1,78 @@
+---
+import Sidebar from "../../../components/Sidebar";
+import Hearder from "../../../components/Hearder.astro";
+import CourseContent from "../../../components/CourseContent.tsx";
+import Layout from "../../../layouts/Layout.astro";
+import NavbarIsland from "../../../components/NavbarIsland";
+
+// ✅ Recibimos parámetros dinámicos de la URL
+const { area, lang } = Astro.params;
+
+// ✅ Ejemplo de cursos por área y lenguaje
+const courses: Record<
+  string,
+  Record<string, { title: string; description: string; modules: string[] }>
+> = {
+  fundamentals: {
+    javascript: {
+      title: "Fundamentals of Programming con JavaScript",
+      description:
+        "Aprende los conceptos básicos de programación, desde variables hasta estructuras de control, aplicados con JavaScript.",
+      modules: [
+        "Introducción a la programación",
+        "Variables y tipos de datos",
+        "Estructuras de control",
+        "Funciones y módulos",
+        "Proyecto práctico",
+      ],
+    },
+    python: {
+      title: "Fundamentals of Programming con Python",
+      description:
+        "Descubre la programación con Python, ideal para principiantes y proyectos de ciencia de datos.",
+      modules: [
+        "Introducción a Python",
+        "Tipos de datos y colecciones",
+        "Control de flujo",
+        "Funciones y librerías",
+        "Mini proyecto",
+      ],
+    },
+  },
+  algorithms: {},
+  databases: {},
+  networks: {},
+  mobile: {},
+  security: {},
+  os: {},
+
+};
+
+// ✅ Obtener curso o fallback
+const course = courses[area!]?.[lang!] ?? {
+  title: "Curso no encontrado",
+  description: "El área o lenguaje seleccionado no tiene un curso disponible aún.",
+  modules: [],
+};
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{course.title}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <Layout>
+        <NavbarIsland client:load />
+            <div class="flex flex-1">
+                <Sidebar />
+                    <CourseContent
+                    title={course.title}
+                    description={course.description}
+                    modules={course.modules}
+                    />
+            </div>
+    </Layout>
+  </body>
+</html>

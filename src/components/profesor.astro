@@ -1,0 +1,50 @@
+---
+const modules = [
+  'Diseño de rutas de aprendizaje',
+  'Evaluación formativa y retroalimentación',
+  'Creación de contenido interactivo',
+  'Gestión de grupos y progreso',
+  'Accesibilidad y diversidad en enseñanza',
+];
+
+const stats = {
+  estudiantesActivos: 128,
+  grupos: 5,
+  progresoPromedio: '72%',
+};
+---
+  <div class="max-w-5xl mx-auto px-6 py-12 space-y-10">
+    <h1 class="text-3xl font-bold text-center text-[#FEA723]">
+        Panel del Profesor
+      </h1>
+
+      <section class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+        <div class="bg-white shadow rounded-lg p-4">
+          <h2 class="text-xl font-semibold text-[#323232]">Estudiantes activos</h2>
+          <p class="text-2xl font-bold text-[#FEA723]">{stats.estudiantesActivos}</p>
+        </div>
+        <div class="bg-white shadow rounded-lg p-4">
+          <h2 class="text-xl font-semibold text-[#323232]">Grupos</h2>
+          <p class="text-2xl font-bold text-[#FEA723]">{stats.grupos}</p>
+        </div>
+        <div class="bg-white shadow rounded-lg p-4">
+          <h2 class="text-xl font-semibold text-[#323232]">Progreso promedio</h2>
+          <p class="text-2xl font-bold text-[#FEA723]">{stats.progresoPromedio}</p>
+        </div>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-xl font-semibold">Módulos disponibles</h2>
+        <ul class="list-disc list-inside text-gray-700 space-y-2">
+          {modules.map((modulo) => (
+            <li>{modulo}</li>
+          ))}
+        </ul>
+      </section>
+
+      <div class="text-center pt-8">
+        <a href="/learning" class="text-[#0078D4] hover:underline text-sm">
+          ← Volver al inicio
+        </a>
+      </div>
+    </div>

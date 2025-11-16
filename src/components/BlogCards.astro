@@ -1,0 +1,19 @@
+---
+const { title, description, date, views, category } = Astro.props;
+---
+
+<div class="flex gap-4 items-start bg-white rounded-xl shadow-md hover:shadow-lg transition p-4">
+  <div class="w-20 h-20 bg-linear-to-br from-purple-400 to-blue-400 rounded-lg flex items-center justify-center text-white font-bold text-xs">
+    {category}
+  </div>
+
+  <!-- Contenido -->
+  <div class="flex-1 cursor-pointer">
+    <h3 class="text-lg font-semibold text-[#323232] mb-1">{title}</h3>
+    <p class="text-sm text-gray-600 mb-2 leading-relaxed">{description}</p>
+    <div class="text-xs text-gray-500 flex gap-4">
+      <span>{date}</span>
+      <span>Views {views}</span>
+    </div>
+  </div>
+</div>

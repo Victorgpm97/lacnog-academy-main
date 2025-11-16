@@ -1,0 +1,21 @@
+---
+import LearningShell from '../components/LearningShell';
+
+let selectedArea: string | null = null;
+let showLanguages = false;
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Explora rutas de aprendizaje</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body class="bg-[#F8FAFC]">
+    <main class="max-w-7xl mx-auto px-6 py-12 space-y-16">
+        <section class="space-y-6">
+            <LearningShell client:load />
+        </section>
+    </main>
+  </body>
+</html>

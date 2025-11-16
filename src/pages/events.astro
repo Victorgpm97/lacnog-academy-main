@@ -1,0 +1,14 @@
+---
+import Event from '../components/Evento.astro';
+import Hearders from '../components/Hearders.tsx';
+import Layout from '../layouts/Layout.astro';
+import NavbarIsland from "../components/NavbarIsland.tsx";
+---
+<header>
+    <meta charset="UTF-8" />
+    <title>Eventos</title>
+</header>
+<Layout>
+    <NavbarIsland client:load />
+	<Event />
+</Layout>

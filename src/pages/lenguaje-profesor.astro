@@ -1,0 +1,19 @@
+---
+import Hearder from '../components/Hearder.astro';
+import LanguageSelector from '../components/LanguageSelectorProfesor.tsx';
+import Layout from "../layouts/Layout.astro"
+import NavbarIsland from "../components/NavbarIsland.tsx";
+import Lacnog from "../logos/Logo-LACNOG-1-300x154.png"
+---
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Aprendizaje</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>   
+    <Layout>
+      <NavbarIsland client:load /> 
+      <LanguageSelector client:load />
+    </Layout>
+  </body>

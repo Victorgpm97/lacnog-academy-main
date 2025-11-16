@@ -1,0 +1,19 @@
+---
+// src/pages/eventos/[id].astro
+import EventoDetalle from "../../components/EventoDetalle.tsx";
+import { eventos } from "../../data/eventos";
+import Layout from "../../layouts/Layout.astro"
+import NavbarIsland from "../../components/NavbarIsland.tsx";
+
+const { id } = Astro.params;
+const evento = eventos.find((e) => e.id === Number(id));
+---
+
+<Layout>
+    <NavbarIsland client:load /> 
+    {evento ? (
+    <EventoDetalle client:load evento={evento} />
+    ) : (
+    <p class="text-center mt-20 text-gray-500">Evento no encontrado</p>
+    )}
+</Layout>

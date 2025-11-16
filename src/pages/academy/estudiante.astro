@@ -1,0 +1,15 @@
+---
+const temas = ['Tema 1', 'Tema 2', 'Tema 3', 'Tema 4'];
+import Layout from "../../layouts/Layout.astro";
+import NavbarIsland from "../../components/NavbarIsland.tsx";
+import EstudianteSelector from "../../components/LanguageSelectorProfesor"
+---
+
+<html lang="es">
+  <body>
+    <Layout>
+        <NavbarIsland client:load />
+        <EstudianteSelector client:load />
+    </Layout>
+  </body>
+</html>
