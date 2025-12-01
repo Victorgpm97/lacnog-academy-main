@@ -46,7 +46,7 @@ All commands are run from the root of the project, from a terminal:
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
 
 
-##📄 **Documentación Frontend**📄
+##📄 Documentación Frontend 📄
 
 🏗️ **Arquitectura general**
 El frontend está construido con React + TypeScript + TailwindCSS, siguiendo una arquitectura modular. Cada sección se implementa como un componente o página independiente, con estados controlados y comunicación con el backend (Strapi/Xata) para persistencia de datos.
