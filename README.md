@@ -52,107 +52,107 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 El frontend está construido con React + TypeScript + TailwindCSS, siguiendo una arquitectura modular. Cada sección se implementa como un componente o página independiente, con estados controlados y comunicación con el backend (Strapi/Xata) para persistencia de datos.
 
 📌 **Secciones**
-**1. Inicio (Welcome.astro)**
+##**1. Inicio (Welcome.astro)**
 
-Propósito: Página principal del sitio, punto de entrada del usuario.
+**Propósito:** Página principal del sitio, punto de entrada del usuario.
 
-Contenido:
+**Contenido:**
 
-Encabezado con logo y navegación.
+- Encabezado con logo y navegación.
 
-Hero section con mensaje principal.
+- Hero section con mensaje principal.
 
-Secciones destacadas: Contenido, blogs, noticias.
+- Secciones destacadas: Contenido, blogs, noticias.
 
-Características técnicas:
+**Características técnicas:**
 
-Componentes reutilizables para tarjetas de contenido.
+- Componentes reutilizables para tarjetas de contenido.
 
-Diseño responsive con Tailwind.
+- Diseño responsive con Tailwind.
 
-Links hacia otras secciones.
+- Links hacia otras secciones.
 
-**2. Contenido (contents.astro)**
+##**2. Contenido (contents.astro)**
 
-Propósito: Mostrar recursos generales (Cursos que se verá).
+**Propósito:** Mostrar recursos generales (Cursos que se verá).
 
-Contenido:
+**Contenido:**
 
-Listado de recursos con título, descripción y enlace.
+- Listado de recursos con título, descripción y enlace.
 
-Filtros por categoría o tipo de recurso.
+- Filtros por categoría o tipo de recurso.
 
-Características técnicas:
+**Características técnicas:**
 
-Uso de map para renderizar listas dinámicas.
+- Uso de map para renderizar listas dinámicas.
 
-Posible integración con CMS para cargar contenido.
+- Posible integración con CMS para cargar contenido.
 
-**3. Cursos (LenguajeSelectorProfesor.tsx)**
+##**3. Cursos (LenguajeSelectorProfesor.tsx)**
 
-Propósito: Mostrar cursos disponibles.
+**Propósito:** Mostrar cursos disponibles.
 
-Contenido:
+**Contenido:**
 
-Tarjetas de curso con título, descripción, imagen y botón de inscripción.
+- Tarjetas de curso con título, descripción, imagen y botón de inscripción.
 
-Sección de cursos destacados.
+- Sección de cursos destacados.
 
-Características técnicas:
+**Características técnicas:**
 
-Datos obtenidos desde el CMS (Strapi/Xata).
+- Datos obtenidos desde el CMS (Strapi/Xata).
 
-Componentes de tarjeta reutilizables.
+- Componentes de tarjeta reutilizables.
 
-Manejo de estados de carga y error.
+- Manejo de estados de carga y error.
 
-**4. Blogs (Blogs.astro)**
+##**4. Blogs (Blogs.astro)**
 
-Propósito: Mostrar artículos de blog.
+**Propósito:** Mostrar artículos de blog.
 
-Contenido:
+**Contenido:**
 
-Listado de posts con título, resumen, imagen y fecha.
+- Listado de posts con título, resumen, imagen y fecha.
 
-Paginación o scroll infinito.
+- Paginación o scroll infinito.
 
-Características técnicas:
+**Características técnicas:**
 
-Integración con CMS para obtener posts.
+- Integración con CMS para obtener posts.
 
-Uso de Link para navegar a detalle de cada blog.
+- Uso de Link para navegar a detalle de cada blog.
 
-Manejo de estados de carga.
+- Manejo de estados de carga.
 
-**5. Noticias (noticias.astro)**
+##**5. Noticias (noticias.astro)**
 
-Propósito: Mostrar noticias publicadas.
+**Propósito:** Mostrar noticias publicadas.
 
-Contenido:
+**Contenido:**
 
-Listado de noticias con título, resumen, imagen y etiquetas.
+- Listado de noticias con título, resumen, imagen y etiquetas.
 
-Filtros por etiquetas.
+- Filtros por etiquetas.
 
-Características técnicas:
+**Características técnicas:**
 
-Integración con Xata para obtener noticias.
+- Integración con Xata para obtener noticias.
 
-Renderizado dinámico de chips de etiquetas.
+- Renderizado dinámico de chips de etiquetas.
 
-Diseño responsive.
+- Diseño responsive.
 
-**6. Crear Noticias (CrearNoticia.tsx)**
+##**6. Crear Noticias (CrearNoticia.tsx)**
 
-Propósito: Formulario para crear nuevas noticias.
+**Propósito:** Formulario para crear nuevas noticias.
 
-Contenido:
+**Contenido:**
 
-Inputs para título, resumen y contenido.
+- Inputs para título, resumen y contenido.
 
-Subida de imagen a Cloudinary.
+- Subida de imagen a Cloudinary.
 
-Selección dinámica de etiquetas:
+- Selección dinámica de etiquetas:
 
 Botón “+ Agregar Tags”.
 
@@ -162,19 +162,19 @@ Chips removibles para etiquetas seleccionadas.
 
 Botón de envío.
 
-Características técnicas:
+**Características técnicas:**
 
-Estados controlados con useState.
+- Estados controlados con useState.
 
-Validación: requiere al menos una etiqueta.
+- Validación: requiere al menos una etiqueta.
 
-Integración con Xata (xata.db.noticias.create).
+- Integración con Xata (xata.db.noticias.create).
 
-Manejo de estados de carga (loading).
+- Manejo de estados de carga (loading).
 
-Feedback visual (preview de imagen, chips de tags).
+- Feedback visual (preview de imagen, chips de tags).
 
-**🔑 Buenas prácticas aplicadas**
+##**🔑 Buenas prácticas aplicadas**
 
 Accesibilidad: uso de aria-label en botones y selects.
 
@@ -186,7 +186,7 @@ Validación: campos requeridos y alertas en caso de error.
 
 Responsive design: TailwindCSS para adaptabilidad.
 
-**🚀 Posibles mejoras futuras**
+##**🚀 Posibles mejoras futuras**
 
 Animaciones al mostrar/ocultar selects y chips.
 
