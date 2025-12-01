@@ -46,13 +46,13 @@ All commands are run from the root of the project, from a terminal:
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
 
 
-📄 **Documentación Frontend**📄
+##📄 **Documentación Frontend**📄
 
 🏗️ **Arquitectura general**
 El frontend está construido con React + TypeScript + TailwindCSS, siguiendo una arquitectura modular. Cada sección se implementa como un componente o página independiente, con estados controlados y comunicación con el backend (Strapi/Xata) para persistencia de datos.
 
 📌 **Secciones**
-##**1. Inicio (Welcome.astro)**
+**1. Inicio (Welcome.astro)**
 
 **Propósito:** Página principal del sitio, punto de entrada del usuario.
 
@@ -72,7 +72,7 @@ El frontend está construido con React + TypeScript + TailwindCSS, siguiendo una
 
 - Links hacia otras secciones.
 
-##**2. Contenido (contents.astro)**
+**2. Contenido (contents.astro)**
 
 **Propósito:** Mostrar recursos generales (Cursos que se verá).
 
@@ -88,7 +88,7 @@ El frontend está construido con React + TypeScript + TailwindCSS, siguiendo una
 
 - Posible integración con CMS para cargar contenido.
 
-##**3. Cursos (LenguajeSelectorProfesor.tsx)**
+**3. Cursos (LenguajeSelectorProfesor.tsx)**
 
 **Propósito:** Mostrar cursos disponibles.
 
@@ -106,7 +106,7 @@ El frontend está construido con React + TypeScript + TailwindCSS, siguiendo una
 
 - Manejo de estados de carga y error.
 
-##**4. Blogs (Blogs.astro)**
+**4. Blogs (Blogs.astro)**
 
 **Propósito:** Mostrar artículos de blog.
 
@@ -124,7 +124,7 @@ El frontend está construido con React + TypeScript + TailwindCSS, siguiendo una
 
 - Manejo de estados de carga.
 
-##**5. Noticias (noticias.astro)**
+**5. Noticias (noticias.astro)**
 
 **Propósito:** Mostrar noticias publicadas.
 
@@ -142,7 +142,7 @@ El frontend está construido con React + TypeScript + TailwindCSS, siguiendo una
 
 - Diseño responsive.
 
-##**6. Crear Noticias (CrearNoticia.tsx)**
+**6. Crear Noticias (CrearNoticia.tsx)**
 
 **Propósito:** Formulario para crear nuevas noticias.
 
@@ -174,7 +174,7 @@ Botón de envío.
 
 - Feedback visual (preview de imagen, chips de tags).
 
-##**🔑 Buenas prácticas aplicadas**
+**🔑 Buenas prácticas aplicadas**
 
 Accesibilidad: uso de aria-label en botones y selects.
 
@@ -186,7 +186,7 @@ Validación: campos requeridos y alertas en caso de error.
 
 Responsive design: TailwindCSS para adaptabilidad.
 
-##**🚀 Posibles mejoras futuras**
+**🚀 Posibles mejoras futuras**
 
 Animaciones al mostrar/ocultar selects y chips.
 
