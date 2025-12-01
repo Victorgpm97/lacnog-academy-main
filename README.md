@@ -53,6 +53,7 @@ El frontend está construido con React + TypeScript + TailwindCSS, siguiendo una
 
 📌 **Secciones**
 **1. Inicio (Welcome.astro)**
+
 Propósito: Página principal del sitio, punto de entrada del usuario.
 
 Contenido:
@@ -72,6 +73,7 @@ Diseño responsive con Tailwind.
 Links hacia otras secciones.
 
 **2. Contenido (contents.astro)**
+
 Propósito: Mostrar recursos generales (Cursos que se verá).
 
 Contenido:
@@ -87,6 +89,7 @@ Uso de map para renderizar listas dinámicas.
 Posible integración con CMS para cargar contenido.
 
 **3. Cursos (LenguajeSelectorProfesor.tsx)**
+
 Propósito: Mostrar cursos disponibles.
 
 Contenido:
@@ -104,6 +107,7 @@ Componentes de tarjeta reutilizables.
 Manejo de estados de carga y error.
 
 **4. Blogs (Blogs.astro)**
+
 Propósito: Mostrar artículos de blog.
 
 Contenido:
@@ -121,6 +125,7 @@ Uso de Link para navegar a detalle de cada blog.
 Manejo de estados de carga.
 
 **5. Noticias (noticias.astro)**
+
 Propósito: Mostrar noticias publicadas.
 
 Contenido:
@@ -138,6 +143,7 @@ Renderizado dinámico de chips de etiquetas.
 Diseño responsive.
 
 **6. Crear Noticias (CrearNoticia.tsx)**
+
 Propósito: Formulario para crear nuevas noticias.
 
 Contenido:
@@ -169,6 +175,7 @@ Manejo de estados de carga (loading).
 Feedback visual (preview de imagen, chips de tags).
 
 **🔑 Buenas prácticas aplicadas**
+
 Accesibilidad: uso de aria-label en botones y selects.
 
 UX: feedback visual en subida de imagen y selección de tags.
@@ -180,6 +187,7 @@ Validación: campos requeridos y alertas en caso de error.
 Responsive design: TailwindCSS para adaptabilidad.
 
 **🚀 Posibles mejoras futuras**
+
 Animaciones al mostrar/ocultar selects y chips.
 
 Autocompletado de etiquetas personalizadas.
